@@ -1,3 +1,5 @@
+/* Code for Index.html */
+
 div.decklist {
   width:400px;
   margin:5px;
@@ -17,4 +19,10 @@ h1 {
 #output {
   font-size: small;
   color: white;
+}
+
+/* Code for Checkboxes.html */
+
+#work-responses {
+  display: none;
 }

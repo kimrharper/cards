@@ -1,3 +1,4 @@
+/* Code for index.html */
 $(document).ready(function() {
   var cardnumbers = [1,2,3,4,5,6,7,8,9,10,11,12,13];
   var suits = ["Diamonds ♦","Hearts ♥","Spades ♠","Clubs ♣"];
@@ -23,3 +24,16 @@ $(document).ready(function() {
   $("#output").append(fiftytwocard + "<br/>");
     })
 })
+
+/* Code for checkboxes.html */
+$(document).ready(function(){
+  $("form#transportation_survey").submit(function(event){
+    event.preventDefault();
+    $("#work-responses").show();
+    $("input:checkbox[name=work-transportation]:checked").each(function(){
+      var workTransportationMode = $(this).val();
+      $('#work-responses').append(workTransportationMode + "<br>");
+    });
+    $('#transportation_survey').hide();
+  });
+});
